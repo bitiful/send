@@ -77,9 +77,9 @@ export default function Home() {
 
     return (
         <div
-            className="h-screen bg-[#F2F2F0] pt-[160px] bg-gradient-to-r from-violet-500 to-fuchsia-500">
+            className="content-center h-screen bg-gradient-to-r from-violet-500 to-fuchsia-500">
             <div
-                className='bg-white w-96 h-[700px] rounded-xl border-2 p-4 ml-48'>
+                className='bg-white w-96 h-[700px] rounded-xl border-2 p-4 ml-52'>
                 <div className='flex justify-between items-center h-10'>
                     <svg width="22" height="22" aria-hidden="true" viewBox="0 0 16 16" version="1.1"
                          data-view-component="true" className='invisible'>
