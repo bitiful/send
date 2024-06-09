@@ -78,7 +78,7 @@ export default function Home() {
 
     return (
         <div
-            className="flex h-screen min-h-[1000px] bg-[#181818] items-center justify-center">
+            className="flex h-screen min-h-[1000px] bg-[#181818] items-center justify-center select-none">
             <div className='relative flex items-center justify-center shrink-0'>
                 <div
                     className='bg-white w-96 h-[700px] rounded-xl p-4'>
