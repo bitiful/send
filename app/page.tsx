@@ -48,7 +48,7 @@ export default function Home() {
             const now = new Date()
             const date = `${now.getFullYear()}-${now.getMonth()}-${now.getDay()}-${now.getHours()}`
             const objectKey = date + "-" + generateRandomString() + "-" + fileName
-            const requestUrl = `${API_URL}/presigned-url?key=${objectKey}&content-length=${file.size}&no-wait=5&max-requests=5&expire=1800&limit-rate=5242880&force-download=true`
+            const requestUrl = `${API_URL}/presigned-url?key=${objectKey}&content-length=${file.size}&no-wait=5&max-requests=2&expire=1800&limit-rate=5242880&force-download=true`
             const response = await fetch(requestUrl)
             if (!response.ok) {
                 console.log("error", response.status)
@@ -177,9 +177,13 @@ export default function Home() {
 
                         <div>
                             <div className='mt-20'>
-                                <div className='text-orange-400 text-sm flex flex-col text-center font-bold gap-1'>
-                                    <div>利用 Simul-Transfer 技术</div>
-                                    <div>文件上传中即可开始下载，快来试试吧 !</div>
+                                <div className='text-orange-400 text-sm flex flex-col text-center font-semibold gap-2'>
+                                    <div>利用 <span
+                                        className='font-extrabold'>Simul-Transfer</span> 技术
+                                    </div>
+                                    <div>
+                                        文件上传中即可开始下载 ，快来试试吧!
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -192,7 +196,7 @@ export default function Home() {
 
                     <div>
                         <div className='flex justify-center gap-4 mb-2 mt-4'>
-                            <div className='text-xs text-[#333] font-bold'>最大下载次数: 5次</div>
+                            <div className='text-xs text-[#333] font-bold'>最大下载次数: 2次</div>
                             <div className='text-xs text-[#333] font-bold'>过期时间: 30分钟</div>
                             <div className='text-xs text-[#333] font-bold'>下载限速: 5 MiB/s</div>
 
@@ -214,12 +218,13 @@ export default function Home() {
                                 <path strokeLinecap="round" strokeLinejoin="round"
                                       d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/>
                             </svg>
-                            <span>复制链接</span>
+                            <span>复制链接, 可立即下载</span>
                         </div>
                     </div>
                 </div>
 
-                <div className='h-[700px] w-[600px] content-center ml-28'>
+                <div
+                    className='h-[700px] w-[600px] content-center ml-28 pointer-events-none cursor-default'>
                     <Image
                         src="desc.svg"
                         width={600}
@@ -228,7 +233,7 @@ export default function Home() {
                     />
                 </div>
 
-                <div className='absolute -top-44 -left-48'>
+                <div className='absolute -top-44 -left-48 pointer-events-none cursor-default'>
                     <Image
                         src="stars.svg"
                         width={160}
@@ -237,7 +242,7 @@ export default function Home() {
                     />
                 </div>
 
-                <div className='absolute -bottom-40 -left-44'>
+                <div className='absolute -bottom-40 -left-44 pointer-events-none cursor-default'>
                     <Image
                         src="fast.svg"
                         width={160}
@@ -246,7 +251,7 @@ export default function Home() {
                     />
                 </div>
 
-                <div className='absolute -top-10 -right-12'>
+                <div className='absolute -top-10 -right-12 pointer-events-none cursor-default'>
                     <Image
                         src="top.svg"
                         width={160}
@@ -254,7 +259,7 @@ export default function Home() {
                         alt="icon"
                     />
                 </div>
-                <div className='absolute -bottom-10 -right-24'>
+                <div className='absolute -bottom-10 -right-24 pointer-events-none cursor-default'>
                     <Image
                         src="five.svg"
                         width={160}

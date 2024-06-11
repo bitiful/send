@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({subsets: ["latin"]});
 
 export const metadata: Metadata = {
-    title: "bitiful transfer",
-    description: "bitiful transfer demo",
+    title: "Bitiful Send",
+    description: "Bitiful Send Demo",
 };
 
 export default function RootLayout({
