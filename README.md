@@ -1,10 +1,12 @@
-![biti-transfer-screenshop-colorful](https://github.com/bitiful/biti-transfer/assets/168170389/a9baf413-115b-48d0-a9ac-907582b82dda)
+## 缤纷快传
+
+![bitiful-send](https://github.com/bitiful/biti-transfer/assets/168170389/d08f6f11-6757-43b7-9db1-28a76eedaa20)
 
 ## 介绍
 
 [Wetransfer](https://wetransfer.com) 和 [奶牛快传](https://cowtransfer.com) 的开源替代。
 
-并支持领先的独特功能：即传即下。
+支持缤纷云领先的独特功能「即传即下」。
 
 ## 特点
 
@@ -15,7 +17,7 @@
 
 ## 独有特点
 
-若使用 [缤纷云 S4](https://www.bitiful.com) 做底层存储可 0 代码获得如下特性：
+若使用 [缤纷云 S4](https://www.bitiful.com) 做底层存储可原生获得以下特性：
 1. 上传一开始，便可进行下载，不用等待上传完毕（基于 缤纷云特有的「Simul-Transfer 即传即下」技术）
 2. 利用缤纷云 S4 的「X-Bitiful-Max-Requests」参数原生限制分享后的下载次数（不用再在业务层面自己写逻辑实现）
 
