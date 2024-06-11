@@ -1,6 +1,6 @@
 ## 缤纷快传
 
-![bitiful-send](https://github.com/bitiful/biti-transfer/assets/168170389/d08f6f11-6757-43b7-9db1-28a76eedaa20)
+![bitiful-send](https://github.com/bitiful/biti-transfer/assets/168170389/a11f3329-a30d-4f93-986d-140c5ce68c53)
 
 ## 介绍
 
