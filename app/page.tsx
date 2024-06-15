@@ -46,7 +46,7 @@ export default function Home() {
                 "-"
             );
             const now = new Date()
-            const date = `${now.getFullYear()}-${now.getMonth()}-${now.getDay()}-${now.getHours()}`
+            const date = `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}-${now.getHours()}`
             const objectKey = date + "-" + generateRandomString() + "-" + fileName
             const requestUrl = `${API_URL}/presigned-url?key=${objectKey}&content-length=${file.size}&no-wait=5&max-requests=2&expire=1800&limit-rate=5242880&force-download=true`
             const response = await fetch(requestUrl)
