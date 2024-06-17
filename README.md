@@ -6,7 +6,7 @@
 
 [Wetransfer](https://wetransfer.com) 和 [奶牛快传](https://cowtransfer.com) 的开源替代。
 
-支持缤纷云领先的独特功能「即传即下」。
+支持缤纷云领先的独特功能「即传即收」。
 
 ## 特点
 
